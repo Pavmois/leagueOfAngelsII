@@ -1,0 +1,31 @@
+@import url(./header/header.css);
+@import url(./slider/slider.css);
+@import url(./video/video.css);
+@import url(./mount/mount.css);
+@import url(./footer/footer.css);
+@import url(./form/form.css);
+
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.main__container {
+  background-color: rgb(20, 20, 20);
+}
+
+body {
+  min-width: 1200px;
+}

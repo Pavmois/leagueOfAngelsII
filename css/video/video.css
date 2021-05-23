@@ -1,0 +1,162 @@
+.video {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1950px;
+    width: 100%;
+    height: 856px;
+    background-image: url(../../assets/3_VIDEO/3_VIDEO_shadow_top.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #movie {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .video__main--content {
+    position: relative;
+    height: 856px;
+    z-index: 200;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .video__main--semi-text {
+    max-width: 1200px;
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(238, 238, 238);
+    line-height: 1.5;
+    margin-bottom: -40px;
+  }
+  
+  .video__main--arrow {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .video__main--play {
+    cursor: pointer;
+  }
+  
+  .video__main--arrow-active {
+    width: 102px;
+    height: 66px;
+    background-image: url(../../assets/BTN_scroll_normal.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .video__main--arrow-active:hover {
+    background-image: url(../../assets/BTN_scroll_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .video__main--arrow-active:active {
+    background-image: url(../../assets/BTN_scroll_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .video__trailer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: rgba(0,0,0,0.55);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  
+  .video_tr {
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+    outline: none;
+  }
+  
+  .active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: rgba(0,0,0,0.55);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: block;
+  }
+  
+  .close {
+    display: none;
+  }
+  
+  .close_tr {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 54px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  

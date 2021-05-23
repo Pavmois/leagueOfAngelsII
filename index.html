@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лига Ангелов II</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <article class="main__container">
+      <!--Форма регистрации-->
+      <div class="form">
+        <div class="form__text">
+            <p class="form__text--enter">Войти через соц.сеть</p>
+        </div>
+
+        <div class="footer__social">
+          <div class="social__icon social__facebook"></div>
+          <div class="social__icon social__vk"></div>
+          <div class="social__icon social__ok"></div>
+          <div class="social__icon social__mail"></div>
+        </div>
+
+        <input name="email" type="text" placeholder="Ввести e-mail" class="email" required>
+    </div>
+      <!-- Лига Ангелов -->
+      <section class="header" id="header" onclick="closeForm()">
+        <div class="header__main--logo">
+          <img src="./assets/1_HEADER/1_HEADER_logo.png" alt="" loading=lazy>
+        </div>
+        <div class="header__main--text">
+          <img src="./assets/1_HEADER/1_HEADER_head.png" alt="" loading=lazy>
+        </div>
+        <div class="header__main--button">
+            <div class="header__main--button-active"></div>
+        </div>
+        <div class="header__main--semi-text">
+          Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины преисподней, и лишь вмешательство героя спасет этот мир! Всё зависит только от твоих решений!
+        </div>
+        <div class="header__main--arrow">
+          <a href="#slider"><div class="header__main--arrow-active"></div></a>
+        </div>
+      </section>
+      <!-- Персонажи -->
+      <section class="slider" id="slider" onclick="closeForm()">
+        <a href="#slider" class="next" onclick="pamela()"><div class="arrow slider__arrow--right"></div></a>
+        <a href="#slider" class="prev" onclick="lleyn()"><div class="arrow slider__arrow--left"></div></a>
+            <ul class="slider__container">
+              <li class="slider__element1">
+                <div class="slider__slide1">
+                  <div class="slider__main--text">
+                    <img src="./assets/2_CHARS/2_CHARS_head.png" alt="" loading=lazy>
+                  </div>
+                  <div class="slider__main--content">
+                    <div class="slider__left--side">
+                      <div class="left__side--title">
+                        <img class="left__title--image" src="./assets/2_CHARS/2_CHARS_name_Isolda.png" alt="" loading=lazy>
+                      </div>
+                      <div class="left__side--fraction">
+                        <img src="./assets/2_CHARS/2_CHARS_fraction_Isolda.png" alt="" loading=lazy>
+                        <div class="slider__fraction--immortal">Империя бессмертных</div>
+                      </div>
+                      <div class="left__side--text">
+                        Появление королевы холода и её верного медведя предвещает ледяная буря. Неуязвимая Изольда замораживает противников насмерть и не знает пощады.
+                      </div>
+                      <div class="left__side--skills">
+                        <div class="skill">
+                          <img src="./assets/2_CHARS/2_CHARS_skill_Isolda_1.png" alt="" loading=lazy>
+                          <div class="skill__info">
+                            <div class="skill__title">Конец зимы</div>
+                            <div class="skill__description">360% урона авангарду врага</div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/2_CHARS/2_CHARS_skill_Isolda_2.png" alt="" loading=lazy>
+                          <div class="skill__info">
+                            <div class="skill__title">Морозная ария</div>
+                            <div class="skill__description">Ледяной щит уменьшает получаемый урон на 20%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="slider__right--side">
+                      <div class="slide__form1">
+                        <label for="icon__item">
+                          <div class="icon__image--form1 active1" onclick="isolda()"></div>
+                        </label>
+                        <input class="input__icon" type="radio" name="icon__item" id="icon__item">
+                      </div>
+                      <div class="slide__form1">
+                        <label for="icon__item">
+                          <div class="icon__image--form2" onclick="pamela()"></div>
+                        </label>
+                        <input class="input__icon" type="radio" name="icon__item" id="icon__item">
+                      </div>
+                      <div class="slide__form1">
+                        <label for="icon__item">
+                          <div class="icon__image--form3" onclick="lleyn()"></div>
+                        </label>
+                        <input class="input__icon" type="radio" name="icon__item" id="icon__item">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__main--semi-text">
+                    60 наемников с неповторимой историей и сотни возможностей для построения команды ждут тебя! Система связей между персонажами - важная часть игрового сюжета
+                    и тонкий механизм настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи.
+                  </div>
+                  <div class="slider__main--arrow">
+                    <a href="#video"><div class="slider__main--arrow-active"></div></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+      </section>
+      <!-- Видеоролик -->
+      <section id="video" class="video" onclick="closeForm()">
+        <video autoplay muted loop preload id="movie" src="./assets/3_VIDEO/bg.webm" type="video/mp4"></video>
+        <div class="video__main--content">
+          <div class="video__main--text">
+            <img src="./assets/3_VIDEO/3_VIDEO_head.png" alt="" loading=lazy>
+          </div>
+          <div onclick="toggle()" class="video__main--play">
+              <img src="./assets/3_VIDEO/3_VIDEO_icon_play.png" alt="" loading=lazy>
+          </div>
+          <div class="video__main--semi-text">
+            Стань самым сильным в турнирах и накажи противников с других серверов в кросс-серверных сражениях.
+            Занимай места в PvP- и PvE- топах и получай эксклюзивные награды и доступ к магазинам для избранных!
+          </div>
+          <div class="video__main--arrow">
+            <a href="#mount"><div class="video__main--arrow-active"></div></a>
+          </div>
+          <div class="video__trailer">
+            <video class="video_tr" src="./assets/3_VIDEO/bg.mp4" type="video/mp4" controls="true"></video>
+            <div onclick="toggle()" class="close_tr">&times;</div>
+          </div>
+        </div>
+      </section>
+      <!-- Ездовое животное -->
+      <section id="mount" class="mount" onclick="closeForm()">
+        <div class="mount__main--text">
+          <img src="./assets/4_MOUNT/4_MOUNT_head.png" alt="" loading=lazy>
+        </div>
+        <div class="mount__main--content">
+          <div class="mount__main--evolve">
+            <div class="mount__left--side">
+              <img src="./assets/4_MOUNT/4_MOUNT_rating_30000.png" alt="" loading=lazy>
+              <div class="mount__left--text">1 уровень</div>
+            </div>
+            <div class="mounth__right--side">
+              <img src="./assets/4_MOUNT/4_MOUNT_rating_150000.png" alt="" loading=lazy>
+              <div class="mount__right--text">50 уровень</div>
+            </div>
+          </div>
+          <div class="mount__main--semi-text">
+            Пройди десятки элитных данжей, собери крепкие доспехи и сильнейшее оружие и приручи верных маунтов. Добывай ценные ресурсы для максимальной прокачки снаряжения
+            и отряда: развивай скиллы, применяй древние кодексы и собирай уникальные комбинации! Выработай свою стратегию боя и выбери ключевые умения для победы над врагами!
+          </div>
+          <div class="mount__main--arrow">
+            <a href="#footer"><div class="mount__main--arrow-active"></div></a>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section id="footer" class="footer" onclick="closeForm()">
+        <div class="footer__main--text">
+          <img src="./assets/5_FOOTER/5_FOOTER_head.png" alt="" loading=lazy>
+        </div>
+        <div class="footer__main--button">
+            <div class="footer__main--button-active"></div>
+        </div>
+        <div class="footer__main--semi-text">Поделитесь страницей в социальной сети</div>
+        <div class="footer__social">
+          <div class="social__icon social__facebook"></div>
+          <div class="social__icon social__vk"></div>
+          <div class="social__icon social__ok"></div>
+          <div class="social__icon social__mail"></div>
+        </div>
+        <div class="footer__main--politics-text">
+          Нажимая кнопку "Играть", вы подтверждаете что принимаете условия <a href="#">Пользовательского соглашения</a > и <a href="#">политики приватности</a>
+        </div>
+        <div class="footer__company--logo">
+          <a href="#">
+            <img src="./assets/5_FOOTER/5_FOOTER_logo_101xp.png" alt="" loading=lazy>
+          </a>
+        </div>
+      </section>
+
+    </article>
+  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

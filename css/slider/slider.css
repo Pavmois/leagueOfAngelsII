@@ -1,0 +1,400 @@
+.slider {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgb(20, 20, 20);
+  }
+  
+  .slider__slide1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_bg_Isolda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .slider__slide2 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_bg_Pamela.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .slider__slide3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_bg_Lleyn.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .slider__container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slider__element1 {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_bg_Isolda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .slider__element2 {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_bg_Pamela.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .slider__element3 {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 966px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_bg_Lleyn.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .slider__main--text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .slider__main--content {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -50px;
+  }
+  
+  
+  
+  .left__side--fraction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+  
+  .slider__fraction--immortal {
+    font-size: 21px;
+    color: rgb(255, 50, 58);
+    margin: 0 15px;
+  }
+  
+  .slider__fraction--illuminate {
+    font-size: 21px;
+    color: rgb(202, 134, 255);
+    margin: 0 15px;
+  }
+  
+  .slider__fraction--lleyn {
+    font-size: 21px;
+    color: rgb(255, 196, 25);
+    margin: 0 15px;
+  }
+  
+  .left__side--text {
+    font-size: 24px;
+    color: rgb(249, 244, 233);
+    max-width: 440px;
+    width: 100%;
+    margin-left: 40px;
+    padding: 30px 0 10px;
+  }
+  
+  .skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 40px;
+    max-width: 380px;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .skill__info {
+    margin-left: 10px;
+  }
+  
+  .skill__title {
+    font-size: 24px;
+    color: rgb(249, 244, 233);
+    line-height: 1.5;
+  }
+  
+  .skill__description {
+    font-size: 16px;
+    color: rgb(188, 190, 193);
+  }
+  
+  .slider__right--side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  
+  .arrow {
+    width: 102px;
+    height: 66px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+  }
+  
+  
+  .slider__arrow--left {
+    background-image: url(../../assets/BTN_scroll_normal.png);
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .slider__arrow--left:hover {
+    background-image: url(../../assets/BTN_scroll_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .slider__arrow--left:active {
+    background-image: url(../../assets/BTN_scroll_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .slider__arrow--right {
+    background-image: url(../../assets/BTN_scroll_normal.png);
+    right: 0;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .slider__arrow--right:hover {
+    background-image: url(../../assets/BTN_scroll_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .slider__arrow--right:active {
+    background-image: url(../../assets/BTN_scroll_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  
+  
+  .icon__image--form1 {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Isolda_inactive.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .icon__image--form1:hover {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Isolda_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .icon__image--form1:active {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Isolda_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .active1 {
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Isolda_active.png);
+  }
+  
+  
+  
+  .icon__image--form2 {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Pamela_inactive.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .icon__image--form2:hover {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Pamela_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .icon__image--form2:active {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Pamela_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .active2 {
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Pamela_active.png);
+  }
+  
+  .icon__image--form3 {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Lleyn_inactive.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .icon__image--form3:hover {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Lleyn_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .icon__image--form3:active {
+    width: 140px;
+    height: 140px;
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Lleyn_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  
+  .active3 {
+    background-image: url(../../assets/2_CHARS/2_CHARS_icon_Lleyn_active.png);
+  }
+  
+  #icon__item {
+    width: 0;
+    height: 0;
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+  }
+  
+  .slider__main--semi-text {
+    max-width: 1200px;
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(238, 238, 238);
+    line-height: 1.5;
+    margin-top: 40px;
+  }
+  
+  .slider__main--arrow {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .slider__main--arrow-active {
+    width: 102px;
+    height: 66px;
+    background-image: url(../../assets/BTN_scroll_normal.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .slider__main--arrow-active:hover {
+    background-image: url(../../assets/BTN_scroll_hover.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .slider__main--arrow-active:active {
+    background-image: url(../../assets/BTN_scroll_active.png);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
